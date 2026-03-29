@@ -1,0 +1,230 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* גוף הדף */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #b9baf1, #8a7cf6);
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* תוכן עמוד */
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+/* קופסת התחברות / הרשמה */
+.login-container {
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* כותרת */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* שדות טופס */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+form input:focus {
+    border-color: #ba9af2;
+    outline: none;
+}
+
+/* כפתורים */
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ba9af2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #5e35b1;
+}
+
+/* הודעות */
+.error {
+    color: #d32f2f;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.success {
+    color: #388e3c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* קישורים */
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #7e57c2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* סרגל ניווט עליון */
+.top-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+/* קופסת אדמין */
+.admin-container {
+    max-width: 95%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+    overflow-x: auto;
+}
+
+/* טבלה אדמין */
+.admin-container table {
+    width: 100%;
+    max-width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #d6d2e0; 
+}
+
+.admin-container th, .admin-container td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.admin-container th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.admin-container input[type="text"],
+.admin-container input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* כפתורים אדמין */
+.admin-btn {
+    padding: 12px 20px;
+    margin: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+    background-color: #0056b3;
+}
+
+/* הצגת מוצרים */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    clear: both;
+}
